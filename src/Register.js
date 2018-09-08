@@ -70,7 +70,9 @@ class Register extends Component {
                   <h3 className="font-weight-light mb-3">Register</h3>
                   <div className="form-row">
                     {this.state.errorMessage !== null ? (
-                      <FormError theMessage={this.state.errorMessage} />
+                      <FormError
+                        theMessage={this.state.errorMessage}
+                      />
                     ) : null}
                     <section className="col-sm-12 form-group">
                       <label

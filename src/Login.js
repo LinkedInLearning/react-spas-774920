@@ -60,7 +60,9 @@ class LogIn extends Component {
                   <h3 className="font-weight-light mb-3">Log in</h3>
                   <section className="form-group">
                     {this.state.errorMessage !== null ? (
-                      <FormError theMessage={this.state.errorMessage} />
+                      <FormError
+                        theMessage={this.state.errorMessage}
+                      />
                     ) : null}
                     <label
                       className="form-control-label sr-only"

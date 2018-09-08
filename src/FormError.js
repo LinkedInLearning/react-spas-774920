@@ -5,7 +5,9 @@ class FormError extends Component {
     const { theMessage } = this.props;
 
     return (
-      <div className="col-12 alert alert-danger px-3">{theMessage}</div>
+      <div className="col-12 alert alert-danger px-3">
+        {theMessage}
+      </div>
     );
   }
 }

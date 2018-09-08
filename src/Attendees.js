@@ -23,7 +23,9 @@ class Attendees extends Component {
     const attendeesRef = firebase
       .database()
       .ref(
-        `meetings/${this.props.userID}/${this.props.meetingID}/attendees`
+        `meetings/${this.props.userID}/${
+          this.props.meetingID
+        }/attendees`
       );
 
     attendeesRef.on('value', snapshot => {
@@ -99,7 +101,9 @@ class Attendees extends Component {
                     <button
                       className={
                         'btn btn-sm  ' +
-                        (item.star ? 'btn-info' : 'btn-outline-secondary')
+                        (item.star
+                          ? 'btn-info'
+                          : 'btn-outline-secondary')
                       }
                       title="Give user star"
                       onClick={e =>
@@ -147,7 +151,9 @@ class Attendees extends Component {
       <div className="container mt-4">
         <div className="row justify-content-center">
           <div className="col-md-8">
-            <h1 className="font-weight-light text-center">Attendees</h1>
+            <h1 className="font-weight-light text-center">
+              Attendees
+            </h1>
             <div className="card bg-light mb-4">
               <div className="card-body text-center">
                 <div className="input-group input-group-lg">
@@ -181,7 +187,9 @@ class Attendees extends Component {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center">{myAttendees}</div>
+        <div className="row justify-content-center">
+          {myAttendees}
+        </div>
       </div>
     );
   }

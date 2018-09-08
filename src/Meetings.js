@@ -40,7 +40,9 @@ class Meetings extends Component {
               className="btn btn-sm btn-outline-secondary"
               data-toggle="tooltip"
               title="Delete Meeting"
-              onClick={e => this.props.deleteMeeting(e, item.meetingID)}
+              onClick={e =>
+                this.props.deleteMeeting(e, item.meetingID)
+              }
             >
               <GoTrashcan />
             </button>
@@ -48,7 +50,9 @@ class Meetings extends Component {
               className="btn btn-sm btn-outline-secondary"
               title="Check In Link"
               onClick={() =>
-                navigate(`/checkin/${this.props.userID}/${item.meetingID}`)
+                navigate(
+                  `/checkin/${this.props.userID}/${item.meetingID}`
+                )
               }
             >
               <FaLink />
@@ -79,7 +83,10 @@ class Meetings extends Component {
             <h1 className="font-weight-light">Add a Meeting</h1>
             <div className="card bg-light">
               <div className="card-body text-center">
-                <form className="formgroup" onSubmit={this.handleSubmit}>
+                <form
+                  className="formgroup"
+                  onSubmit={this.handleSubmit}
+                >
                   <div className="input-group input-group-lg">
                     <input
                       type="text"

@@ -1,6 +1,5 @@
 // Import React
 import React, { Component } from 'react';
-import FormError from './FormError';
 import { navigate } from '@reach/router';
 
 class CheckIn extends Component {
@@ -30,7 +29,9 @@ class CheckIn extends Component {
       this.props.userID,
       this.props.meetingID
     );
-    navigate(`/attendees/${this.props.userID}/${this.props.meetingID}`);
+    navigate(
+      `/attendees/${this.props.userID}/${this.props.meetingID}`
+    );
   }
 
   render() {

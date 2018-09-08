@@ -32,13 +32,12 @@ class Home extends React.Component {
               Meeting Log
             </div>
             <p className="lead" style={biggerLead}>
-              This simple app creates meetings, allows people to check in,
-              and picks random users to award giveaways. It's a good
-              example of a Single Page Application which includes
-              connection to a database and routing. It's a practical way to
-              learn <a href="https://reactjs.org/">React</a> with{' '}
-              <a href="" />
-              Firebase.
+              This simple app creates meetings, allows people to check
+              in, and picks random users to award giveaways. It's a
+              good example of a Single Page Application which includes
+              connection to a database and routing. It's a practical
+              way to learn <a href="https://reactjs.org/">React</a>{' '}
+              with <a href="https://firebase.google.com">Firebase</a>.
             </p>
 
             {this.props.user == null && (
@@ -49,7 +48,10 @@ class Home extends React.Component {
                 >
                   Register
                 </Link>
-                <Link to="/login" className="btn btn-outline-primary mr-2">
+                <Link
+                  to="/login"
+                  className="btn btn-outline-primary mr-2"
+                >
                   Log In
                 </Link>
               </span>
@@ -131,7 +133,9 @@ class App extends Component {
 
   registerUser = userName => {
     firebase.auth().onAuthStateChanged(FBUser => {
-      FBUser.updateProfile({ displayName: userName }).then(() => {
+      FBUser.updateProfile({
+        displayName: userName
+      }).then(() => {
         this.setState({
           user: FBUser,
           displayName: FBUser.displayName,
@@ -143,11 +147,18 @@ class App extends Component {
   };
 
   addMeeting = meetingName => {
-    const ref = firebase.database().ref(`meetings/${this.state.user.uid}`);
+    const ref = firebase
+      .database()
+      .ref(`meetings/${this.state.user.uid}`);
     ref.push({ meetingName: meetingName });
   };
 
-  checkInAttendee = (attendeeName, attendeeEmail, userID, meetingID) => {
+  checkInAttendee = (
+    attendeeName,
+    attendeeEmail,
+    userID,
+    meetingID
+  ) => {
     const ref = firebase
       .database()
       .ref(`meetings/${userID}/${meetingID}/attendees`);
@@ -227,7 +238,10 @@ class App extends Component {
             toggleStar={this.toggleStar}
             deleteAttendee={this.deleteAttendee}
           />
-          <Register path="/register" registerUser={this.registerUser} />
+          <Register
+            path="/register"
+            registerUser={this.registerUser}
+          />
         </Router>
       </div>
     );
