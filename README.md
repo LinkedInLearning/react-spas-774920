@@ -1,4 +1,4 @@
-# COURSENAME
+# React: Single Page Applications
 
 This is the repository for my course React Single Page Applications. The full course is available on LinkedIn Learning.
 
