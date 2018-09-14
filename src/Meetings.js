@@ -75,7 +75,7 @@ class Meetings extends Component {
               {this.props.meetings && (
                 <div className="list-group list-group-flush">
                   <MeetingsList
-                    userID={this.state.userID}
+                    userID={this.props.userID}
                     meetings={this.props.meetings}
                   />
                 </div>

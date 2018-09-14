@@ -12,7 +12,7 @@ class MeetingsList extends Component {
     e.preventDefault();
     const ref = firebase
       .database()
-      .ref(`meetings/${this.props.userID}/$whichMeeting`);
+      .ref(`meetings/${this.props.userID}/${whichMeeting}`);
     ref.remove();
   };
 
