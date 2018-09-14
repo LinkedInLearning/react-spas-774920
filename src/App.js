@@ -111,6 +111,7 @@ class App extends Component {
           <Home path="/" user={this.state.user} />
           <Login path="/login" />
           <Meetings
+            userID={this.state.userID}
             path="/meetings"
             meetings={this.state.meetings}
             addMeeting={this.addMeeting}
