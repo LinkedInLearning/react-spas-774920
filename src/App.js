@@ -119,7 +119,7 @@ class App extends Component {
             userID={this.state.userID}
           />
           <Attendees
-            path="/attendees/:userId/:meetingID"
+            path="/attendees/:userID/:meetingID"
             adminUser={this.state.userID}
           />
           <CheckIn path="/checkin/:userID/:meetingID" />
