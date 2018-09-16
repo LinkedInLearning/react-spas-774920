@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { GoTrashcan } from 'react-icons/go';
 
 class AttendeesList extends Component {
   constructor(props) {
@@ -6,6 +7,8 @@ class AttendeesList extends Component {
   }
 
   render() {
+    const admin =
+      this.props.adminUser === this.props.userID ? true : false;
     const attendees = this.props.attendees;
     const myAttendees = attendees.map(item => {
       return (
@@ -14,7 +17,30 @@ class AttendeesList extends Component {
           key={item.attendeeID}
         >
           <div className="card ">
-            <div className="card-body px-3 py-2 d-flex align-items-center justify-content-center">
+            <div
+              className={
+                'card-body px-3 py-2 d-flex align-items-center ' +
+                (admin ? '' : 'justify-content-center')
+              }
+            >
+              {admin && (
+                <div className="btn-group pr-2">
+                  <button
+                    className="btn btn-sm btn-outline-secondary"
+                    tite="Delete Attendee"
+                    onClick={e =>
+                      this.deleteAttendee(
+                        e,
+                        this.props.meetingID,
+                        item.attendeeID
+                      )
+                    }
+                  >
+                    <GoTrashcan />
+                  </button>
+                </div>
+              )}
+
               <div>{item.attendeeName}</div>
             </div>
           </div>
