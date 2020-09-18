@@ -1,6 +1,17 @@
-# React: Single Page Applications
+# React: SPAs
+This is the repository for the LinkedIn Learning course React: SPAs. The full course is available from [LinkedIn Learning][lil-course-url].
 
-This is the repository for my course React Single Page Applications. The full course is available on LinkedIn Learning.
+![React: SPAs][lil-thumbnail-url] 
+You know the basics of React, but now you want to build a production-ready project. It's time to dig deeper than the UI. React: SPAs shows you how to build a polished single-page application (SPA), with tools for managing users and reading and writing data from a database. Instructor Ray Villalobos shows you how create React components, add user authentication and authorization, and integrate a Firebase database with custom routing. The project you complete in this course will allow you take your React projects to the next level, and create full-featured user experiences that are fluid and responsive, without constant page loads.
+
+### Learning objectives
+- Routing
+- Integrating Firebase
+- Managing state in forms
+- Registering users
+- Logging users in and out
+- Creating, editing, and deleting records from Firebase
+- Filtering and searching data
 
 ## Instructions
 
@@ -34,6 +45,13 @@ For more advanced users, you can also download all of the branches for this repo
 
 For advanced instructions of how to work with this and other courses with github repos, check out the course: [Learning Git and Github](https://linkedin-learning.pxf.io/c/1252977/449670/8005?subId1=githubrepo&u=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Flearning-git-and-github):
 
-## More Stuff
+### Instructor
+
+**Ray Villalobos**
+
+_Senior Staff Instructor at LinkedIn Learning_
 
 Check out some of my other courses on [LinkedIn Learning](https://linkedin-learning.pxf.io/c/1252977/449670/8005?subId1=githubrepo&u=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Finstructors%2Fray-villalobos). You can follow me on [LinkedIn](https://www.linkedin.com/in/planetoftheweb/), read [my blog](http://raybo.org), [follow me on twitter](http://twitter.com/planetoftheweb), or check out my [youtube channel](http://youtube.com/planetoftheweb).
+
+[lil-course-url]: https://www.linkedin.com/learning/react-spas
+[lil-thumbnail-url]: https://cdn.lynda.com/course/774920/774920-636770101119345538-16x9.jpg
