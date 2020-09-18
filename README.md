@@ -1,7 +1,7 @@
 # React: SPAs
 This is the repository for the LinkedIn Learning course React: SPAs. The full course is available from [LinkedIn Learning][lil-course-url].
 
-![React: SPAs][lil-thumbnail-url] 
+## Course details 
 You know the basics of React, but now you want to build a production-ready project. It's time to dig deeper than the UI. React: SPAs shows you how to build a polished single-page application (SPA), with tools for managing users and reading and writing data from a database. Instructor Ray Villalobos shows you how create React components, add user authentication and authorization, and integrate a Firebase database with custom routing. The project you complete in this course will allow you take your React projects to the next level, and create full-featured user experiences that are fluid and responsive, without constant page loads.
 
 ### Learning objectives
