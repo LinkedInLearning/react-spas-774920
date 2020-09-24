@@ -1,10 +1,36 @@
-Copyright 2017 LinkedIn Corporation
+Copyright 2020 LinkedIn Corporation
 All Rights Reserved.
 
-Licensed under the BSD 2-Clause License (the "License").
+Licensed under the LinkedIn Learning Exercise File License (the "License").
 See LICENSE in the project root for license information.
 
+ATTRIBUTIONS:
 
-This product includes:
+Bootstrap
+https://getbootstrap.com
+Copyright (c) 2020
+License: MIT
 
-* N/A
+jQuery
+https://jquery.com/
+Copyright (c) 2020
+License: MIT
+
+
+Popper
+https://popper.js.org/
+Copyright (c) 2020
+License: MIT
+
+React
+https://reactjs.org/
+Copyright (c) 2020
+License: MIT
+
+
+Please note, this project may automatically load third party code from external 
+repositories (for example, NPM modules, Composer packages, or other dependencies). 
+If so, such third party code may be subject to other license terms than as set 
+forth above. In addition, such third party code may also depend on and load 
+multiple tiers of dependencies. Please review the applicable licenses of the 
+additional dependencies.
